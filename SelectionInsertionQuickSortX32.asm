@@ -209,7 +209,7 @@ main endp
 		call WriteIntegerArray
 		pop edi
 		pop esi
-		call RaedChar
+		call ReadChar
 		call Crlf
 		cmp esi,edi
 		jae QSL1
