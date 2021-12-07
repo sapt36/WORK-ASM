@@ -219,7 +219,7 @@ main endp
 		sub esi,4
 	QSL2:
 		cmp eax,[ebx]
-		jie QSL3
+		jae QSL3
 		add esi,4
 		mov edx,[esi]
 		xchg edx,[ebx]
