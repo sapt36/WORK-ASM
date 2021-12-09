@@ -180,7 +180,7 @@ L4:
 	SSL2:
 		add ebx,4
 		cmp eax,[ebx]
-		jge SSL3		;change to jge to decrease progressively
+		jle SSL3		;change to jge to decrease progressively
 		xchg eax,[ebx]
 	SSL3:
 		cmp ebx,edi
@@ -252,7 +252,7 @@ L4:
 	BSL2: 
 		mov eax,[esi]
 		cmp [esi+4],eax
-		jl BSL3			;change to jl to decrease progressively
+		jg BSL3			;change to jl to decrease progressively
 		xchg eax,[esi+4]
 		mov [esi],eax
 	BSL3: 
