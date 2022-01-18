@@ -280,4 +280,4 @@ main endp
 	ISL2:
 		ret
 	InsertionSort ENDP
-end
+end main
