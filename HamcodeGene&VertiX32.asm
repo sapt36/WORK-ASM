@@ -22,7 +22,7 @@ INCLUDE Irvine32.inc
 	EntrySize = ($ - choiceTable)
 				BYTE '2'
 				DWORD VerifyHamming
-	NumberOfEntries = ($ - choiceTable)
+	NumberOfEntries = ($ - choiceTable) / EntrySize
 .code
 main proc
 L0:
